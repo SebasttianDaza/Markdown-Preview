@@ -1,0 +1,6 @@
+@import './scss/abstracts/variables', './scss/base/base';
+
+html, body {
+    background-color: $background-color-global;
+    font-family: $font-global;
+}

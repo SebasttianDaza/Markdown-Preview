@@ -1,0 +1,16 @@
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin border($width, $style, $color) {
+  border: $width $style $color;
+}
+
+@mixin display_flex($direction,$justify_content, $align_items) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify_content;
+    align-items: $align_items;
+}

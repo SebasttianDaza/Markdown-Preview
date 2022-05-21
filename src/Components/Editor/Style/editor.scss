@@ -1,8 +1,44 @@
+@import '../../../scss/abstracts/mixins', '../../../scss/abstracts/variables';
+
 .header {
+    @include display_flex(column, center, none);
     width: 100%;
+    @include border(2px, solid, $color-border-component);
+    @include border-radius(5px);
+    height: 300px;
+
+    .header-content {
+        @include display_flex(row, flex-start, center);
+        border-bottom: 2px solid $color-border-component;
+        margin: 10px;
+        .header-title {
+            margin-left: 1rem;
+        }
+    }
+
+    .editor-content {
+        margin: 10px;
+        height: 80%;
+        padding: 10px;
+        background-color: $color-background-components;
+        border: none;
+        font: 15px/1.5 $font-global;
+
+    }
+
+    .editor-content::-webkit-scrollbar {
+        width: 8px;
+        background-color: $color-border-component;
+    }
+
+    .editor-content::-webkit-scrollbar-thumb {
+        background-color: $background-color-global;
+    }
+
+    .editor-content::-webkit-scrollbar-corner {
+        display: none;
+        background-color: $color-border-component;
+    }
     
 }
 
-.header-content h3 {
-    color: red;
-}

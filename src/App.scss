@@ -1,7 +1,14 @@
+@import './scss/abstracts/mixins';
+
 .container-all {
+  @include display_flex(column, center, none);
   width: 90%;
   height: 100%;
   margin: 0 auto;
+
+  .child-divider {
+    margin-bottom: 3rem;
+  }
 }
 
 

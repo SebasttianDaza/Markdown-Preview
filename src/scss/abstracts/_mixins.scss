@@ -14,3 +14,7 @@
     justify-content: $justify_content;
     align-items: $align_items;
 }
+
+@mixin box-shadow($x, $y, $blur, $spread, $color) {
+  box-shadow: $x $y $blur $spread $color;
+}

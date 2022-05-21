@@ -2,9 +2,11 @@
 
 .header {
     @include display_flex(column, center, none);
-    width: 100%;
     @include border(2px, solid, $color-border-component);
     @include border-radius(5px);
+    @include box-shadow(19px, 20px, 15px, 0px, rgba(0,0,0,0.1));
+    
+    width: 100%;
     height: 300px;
     overflow: clip;
 

@@ -1,4 +1,4 @@
-@import './scss/abstracts/mixins';
+@import './scss/abstracts/mixins', './scss/abstracts/variables';
 
 .container-all {
   @include display_flex(column, center, none);
@@ -11,11 +11,24 @@
   }
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: $background-color-global;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $color-border-component;
+}
+
 
 @media screen and (min-width: 768px) {
   .container-all {
     width: 70%;
     height: 100%;
     margin: 0 auto;
+
+    .child-divider {
+      margin-bottom: 2rem;
+    }
   }
 }

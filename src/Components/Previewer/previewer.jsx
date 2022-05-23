@@ -18,7 +18,7 @@ const Previewer = ({ icon, htmlMarkdown }) => {
           {htmlMarkdown === "" ? (
             <h1>You have write</h1>
           ) : (
-            <ReactMarkdown plugins={[remarkGfm]}>{htmlMarkdown}</ReactMarkdown>
+            <ReactMarkdown remarkPlugins={[remarkGfm]}>{htmlMarkdown}</ReactMarkdown>
           )}
         </article>
       </main>

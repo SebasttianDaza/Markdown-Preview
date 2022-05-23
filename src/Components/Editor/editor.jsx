@@ -6,7 +6,9 @@ import ErrorFallback from "../../Errors/handleError";
 
 const Editor = ({ icon, state, setState }) => {
   const handleChange = (e) => {
-    setState(e.target.value);
+    if (e.target.value.length > 0) {
+      setState(e.target.value);
+    }
   };
 
   return (

@@ -36,7 +36,7 @@
     "eslint-plugin-import": "~2.26.0",
     "eslint-plugin-prettier": "~4.0.0",
     "eslint-plugin-react": "~7.30.0",
-    "eslint-plugin-react-hooks": "~4.5.0",
+    "eslint-plugin-react-hooks": "~4.6.0",
     "npm-check-updates": "latest",
     "prettier": "~2.6.2",
     "vite": "^2.9.9"
